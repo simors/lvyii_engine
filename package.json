@@ -1,0 +1,22 @@
+{
+  "name": "LvyiiEngine",
+  "version": "1.0.0",
+  "description": "Cloud Engine middleware for Lvyii",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/simors/lvyii_engine.git"
+  },
+  "keywords": [
+    "express;engine"
+  ],
+  "author": "lvyii",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simors/lvyii_engine/issues"
+  },
+  "homepage": "https://github.com/simors/lvyii_engine#readme"
+}
