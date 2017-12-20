@@ -14,7 +14,7 @@
     "express;engine"
   ],
   "author": "lvyii",
-  "license": "ISC",
+  "license": "GPL",
   "bugs": {
     "url": "https://github.com/simors/lvyii_engine/issues"
   },
