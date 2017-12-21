@@ -1,6 +1,6 @@
 {
-  "name": "LvyiiEngine",
-  "version": "1.0.0",
+  "name": "lvyii-engine",
+  "version": "0.0.1",
   "description": "Cloud Engine middleware for Lvyii",
   "main": "index.js",
   "scripts": {
@@ -10,8 +10,7 @@
     "type": "git",
     "url": "https://github.com/simors/lvyii_engine.git"
   },
-  "keywords": [
-  ],
+  "keywords": [],
   "author": "lvyii",
   "license": "MIT",
   "bugs": {
@@ -24,6 +23,8 @@
   "dependencies": {
     "body-parser": "^1.18.2",
     "connect": "^3.6.5",
-    "connect-timeout": "^1.9.0"
+    "connect-timeout": "^1.9.0",
+    "lvyii_cors_headers": "^0.0.3",
+    "underscore": "^1.8.3"
   }
 }
