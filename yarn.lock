@@ -51,6 +51,10 @@ bytes@3.0.0:
   version "3.0.0"
   resolved "http://registry.npm.taobao.org/bytes/download/bytes-3.0.0.tgz#d32815404d689699f85a4ea4fa8755dd13a96048"
 
+charenc@~0.0.1:
+  version "0.0.2"
+  resolved "https://registry.npmjs.org/charenc/-/charenc-0.0.2.tgz#c0a1d2f3a7092e03774bfa83f14c0fc5790a8667"
+
 combined-stream@^1.0.5:
   version "1.0.5"
   resolved "https://registry.npmjs.org/combined-stream/-/combined-stream-1.0.5.tgz#938370a57b4a51dea2c77c15d5c5fdf895164009"
@@ -111,6 +115,10 @@ core-util-is@~1.0.0:
   version "1.0.2"
   resolved "https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
 
+crypt@~0.0.1:
+  version "0.0.2"
+  resolved "https://registry.npmjs.org/crypt/-/crypt-0.0.2.tgz#88d7ff7ec0dfb86f713dc87bbb42d044d3e6c41b"
+
 debug@2.6.9:
   version "2.6.9"
   resolved "http://registry.npm.taobao.org/debug/download/debug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
@@ -146,6 +154,10 @@ ee-first@1.1.1:
 encodeurl@~1.0.1:
   version "1.0.1"
   resolved "http://registry.npm.taobao.org/encodeurl/download/encodeurl-1.0.1.tgz#79e3d58655346909fe6f0f45a5de68103b294d20"
+
+es6-promise@^4.1.1:
+  version "4.2.1"
+  resolved "https://registry.npmjs.org/es6-promise/-/es6-promise-4.2.1.tgz#3b98a6714ba1b9267428b2c00e6265b16dab0205"
 
 escape-html@~1.0.3:
   version "1.0.3"
@@ -297,13 +309,40 @@ ipaddr.js@1.5.2:
   version "1.5.2"
   resolved "http://registry.npm.taobao.org/ipaddr.js/download/ipaddr.js-1.5.2.tgz#d4b505bde9946987ccf0fc58d9010ff9607e3fa0"
 
+is-buffer@~1.1.1:
+  version "1.1.6"
+  resolved "https://registry.npmjs.org/is-buffer/-/is-buffer-1.1.6.tgz#efaa2ea9daa0d7ab2ea13a97b2b8ad51fefbe8be"
+
 isarray@~1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/isarray/-/isarray-1.0.0.tgz#bb935d48582cba168c06834957a54a3e07124f11"
 
-lvyii_cors_headers@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.npmjs.org/lvyii_cors_headers/-/lvyii_cors_headers-0.0.3.tgz#a9ced27750ef617822f228350d1ed94d4abb82fd"
+localstorage-memory@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.npmjs.org/localstorage-memory/-/localstorage-memory-1.0.2.tgz#cd4a8f210e55dd519c929f4b4cc82829b58f9a51"
+
+lvyii_cors_headers@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.npmjs.org/lvyii_cors_headers/-/lvyii_cors_headers-0.0.4.tgz#1e3b1833d2ebd9e5e0f84803ff03c6e775167b69"
+
+lvyii_storage@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.npmjs.org/lvyii_storage/-/lvyii_storage-0.0.1.tgz#18d3168cb2f3f318b06d5b00480564f184c1355e"
+  dependencies:
+    debug "^3.1.0"
+    es6-promise "^4.1.1"
+    localstorage-memory "^1.0.2"
+    md5 "^2.2.1"
+    superagent "^3.8.2"
+    underscore "^1.8.3"
+
+md5@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.npmjs.org/md5/-/md5-2.2.1.tgz#53ab38d5fe3c8891ba465329ea23fac0540126f9"
+  dependencies:
+    charenc "~0.0.1"
+    crypt "~0.0.1"
+    is-buffer "~1.1.1"
 
 media-typer@0.3.0:
   version "0.3.0"
@@ -533,7 +572,7 @@ string_decoder@~1.0.3:
   dependencies:
     safe-buffer "~5.1.0"
 
-superagent@^3.0.0:
+superagent@^3.0.0, superagent@^3.8.2:
   version "3.8.2"
   resolved "https://registry.npmjs.org/superagent/-/superagent-3.8.2.tgz#e4a11b9d047f7d3efeb3bbe536d9ec0021d16403"
   dependencies:
