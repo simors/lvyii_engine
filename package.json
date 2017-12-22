@@ -4,7 +4,8 @@
   "description": "Cloud Engine middleware for Lvyii",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run test-express",
+    "test-express": "mocha test test/express"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   },
   "homepage": "https://github.com/simors/lvyii_engine#readme",
   "devDependencies": {
+    "assert": "^1.4.1",
     "express": "^4.16.2",
     "mocha": "^4.0.1",
     "should": "^13.1.3",
@@ -30,8 +32,8 @@
     "connect": "^3.6.5",
     "connect-timeout": "^1.9.0",
     "debug": "^3.1.0",
-    "lvyii_cors_headers": "^0.0.4",
-    "lvyii_storage": "^0.0.1",
+    "lvyii_cors_headers": "^0.0.5",
+    "lvyii_storage": "^0.0.2",
     "underscore": "^1.8.3"
   }
 }

@@ -34,10 +34,10 @@ module.exports = function(LY) {
           sessionToken: sessionToken
         };
       } else {
-        appId = req.headers['x-lc-id'];
-        appKey = req.headers['x-lc-key'];
-        prodHeader = req.headers['x-lc-prod'];
-        sessionToken = req.headers['x-lc-session'];
+        appId = req.headers['x-ly-id'];
+        appKey = req.headers['x-ly-key'];
+        prodHeader = req.headers['x-ly-prod'];
+        sessionToken = req.headers['x-ly-session'];
         prod = 1;
         if (prodHeader === '0' || prodHeader === 'false') {
           prod = 0;
@@ -56,11 +56,10 @@ module.exports = function(LY) {
         if (!req.LY.id) {
           return utils.unauthResp(res);
         }
-        if (LY.applicationId === req.LY.id &&
-            LY.applicationKey === req.LY.key) {
-          return next();
+        if (LY.applicationId !== req.LY.id) {
+          return utils.unauthResp(res);
         }
-        requestSign = req.headers['x-lc-sign'];
+        requestSign = req.headers['x-ly-sign'];
         if (requestSign) {
           _ref = requestSign.split(',');
           sign = _ref[0];
@@ -74,6 +73,11 @@ module.exports = function(LY) {
         }
         return utils.unauthResp(res);
       } else {
+        // 无论如何都要验证appId和Key
+        if (LY.applicationId !== req.LY.id ||
+          LY.applicationKey !== req.LY.key) {
+          return utils.unauthResp(res);
+        }
         return next();
       }
     };

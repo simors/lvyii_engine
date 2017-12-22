@@ -1,4 +1,4 @@
-const lvyiiHeaders = require('lvyii-cors-headers');
+const lvyiiHeaders = require('lvyii_cors_headers');
 
 module.exports = function() {
   return function(req, res, next) {

@@ -13,6 +13,12 @@ array-flatten@1.1.1:
   version "1.1.1"
   resolved "http://registry.npm.taobao.org/array-flatten/download/array-flatten-1.1.1.tgz#9a5f699051b1e7073328f2a008968b64ea2955d2"
 
+assert@^1.4.1:
+  version "1.4.1"
+  resolved "https://registry.npmjs.org/assert/-/assert-1.4.1.tgz#99912d591836b5a6f5b345c0f07eefc08fc65d91"
+  dependencies:
+    util "0.10.3"
+
 asynckit@^0.4.0:
   version "0.4.0"
   resolved "https://registry.npmjs.org/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
@@ -305,6 +311,10 @@ inherits@2, inherits@2.0.3, inherits@~2.0.3:
   version "2.0.3"
   resolved "http://registry.npm.taobao.org/inherits/download/inherits-2.0.3.tgz#633c2c83e3da42a502f52466022480f4208261de"
 
+inherits@2.0.1:
+  version "2.0.1"
+  resolved "https://registry.npmjs.org/inherits/-/inherits-2.0.1.tgz#b17d08d326b4423e568eff719f91b0b1cbdf69f1"
+
 ipaddr.js@1.5.2:
   version "1.5.2"
   resolved "http://registry.npm.taobao.org/ipaddr.js/download/ipaddr.js-1.5.2.tgz#d4b505bde9946987ccf0fc58d9010ff9607e3fa0"
@@ -321,13 +331,13 @@ localstorage-memory@^1.0.2:
   version "1.0.2"
   resolved "https://registry.npmjs.org/localstorage-memory/-/localstorage-memory-1.0.2.tgz#cd4a8f210e55dd519c929f4b4cc82829b58f9a51"
 
-lvyii_cors_headers@^0.0.4:
-  version "0.0.4"
-  resolved "https://registry.npmjs.org/lvyii_cors_headers/-/lvyii_cors_headers-0.0.4.tgz#1e3b1833d2ebd9e5e0f84803ff03c6e775167b69"
+lvyii_cors_headers@^0.0.5:
+  version "0.0.5"
+  resolved "https://registry.npmjs.org/lvyii_cors_headers/-/lvyii_cors_headers-0.0.5.tgz#1ee2996d939e8cd4b2fd8b17c2ff9e7328e896ec"
 
-lvyii_storage@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.npmjs.org/lvyii_storage/-/lvyii_storage-0.0.1.tgz#18d3168cb2f3f318b06d5b00480564f184c1355e"
+lvyii_storage@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.npmjs.org/lvyii_storage/-/lvyii_storage-0.0.2.tgz#5c69ea3c367c0e656c8d0fbbe0a72f9b9285a43f"
   dependencies:
     debug "^3.1.0"
     es6-promise "^4.1.1"
@@ -618,6 +628,12 @@ unpipe@1.0.0, unpipe@~1.0.0:
 util-deprecate@~1.0.1:
   version "1.0.2"
   resolved "https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
+
+util@0.10.3:
+  version "0.10.3"
+  resolved "https://registry.npmjs.org/util/-/util-0.10.3.tgz#7afb1afe50805246489e3db7fe0ed379336ac0f9"
+  dependencies:
+    inherits "2.0.1"
 
 utils-merge@1.0.1:
   version "1.0.1"
