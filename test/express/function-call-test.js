@@ -15,11 +15,12 @@ const appInfo = require('../fixtures/app-info');
 var appId = appInfo.appId;
 var appKey = appInfo.appKey;
 
+var appSign = "4aaee8dee8821173931f03f7efd7067a,1389085779854"
+
 var app = express();
 
 require('../fixtures/functions')
 
-app.use(LY.Cloud.LvyiiCloudHeaders());
 app.use(LY.express());
 app.use(bodyParser.json());
 
@@ -27,7 +28,7 @@ describe('function-call', function() {
   it('callFuncNormal', function(done) {
     request(app).post('/1/function/callWithParams')
       .set('X-LY-Id', appId)
-      .set('X-LY-Key', appKey)
+      .set('X-LY-Sign', appSign)
       .send({
         username: 'lvyii',
         password: '123'
@@ -42,7 +43,7 @@ describe('function-call', function() {
   it('passwordError', function(done) {
     request(app).post('/1/function/callWithParams')
       .set('X-LY-Id', appId)
-      .set('X-LY-Key', appKey)
+      .set('X-LY-Sign', appSign)
       .send({
         username: 'lvyii',
         password: '321'
@@ -57,7 +58,7 @@ describe('function-call', function() {
   it('paramsError', function(done) {
     request(app).post('/1/function/callWithParams')
       .set('X-LY-Id', appId)
-      .set('X-LY-Key', appKey)
+      .set('X-LY-Sign', appSign)
       .send({
         password: '321'
       })

@@ -1,6 +1,6 @@
 {
   "name": "lvyii-engine",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Cloud Engine middleware for Lvyii",
   "main": "index.js",
   "scripts": {

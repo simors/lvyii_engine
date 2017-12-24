@@ -15,11 +15,12 @@ const appInfo = require('../fixtures/app-info');
 var appId = appInfo.appId;
 var appKey = appInfo.appKey;
 
+var appSign = "4aaee8dee8821173931f03f7efd7067a,1389085779854"
+
 var app = express();
 
 require('../fixtures/functions')
 
-app.use(LY.Cloud.LvyiiCloudHeaders({restrict: false}));
 app.use(LY.express());
 app.use(bodyParser.json());
 
@@ -27,7 +28,7 @@ describe('header-validation', function() {
   it('noSign', function(done) {
     request(app).post('/1/function/firstCall')
       .set('X-LY-Id', appId)
-      .set('X-LY-Key', appKey)
+      .set('X-LY-Sign', appSign)
       .expect(200, function(err, res) {
         assert.equal('success', res.body.result);
         done(err);
@@ -37,7 +38,7 @@ describe('header-validation', function() {
   it('wrong app id', function(done) {
     request(app).post('/1/function/firstCall')
       .set('X-LY-Id', 'abc')
-      .set('X-LY-Key', appKey)
+      .set('X-LY-Sign', appSign)
       .expect(401, function(err, res) {
         done(err);
       });
@@ -46,7 +47,7 @@ describe('header-validation', function() {
   it('wrong app key', function(done) {
     request(app).post('/1/function/firstCall')
       .set('X-LY-Id', appId)
-      .set('X-LY-Key', 'abc')
+      .set('X-LY-Sign', 'abc')
       .expect(401, function(err, res) {
         done(err);
       });
