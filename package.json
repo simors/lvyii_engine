@@ -1,6 +1,6 @@
 {
   "name": "lvyii-engine",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Cloud Engine middleware for Lvyii",
   "main": "index.js",
   "scripts": {
@@ -33,7 +33,7 @@
     "connect-timeout": "^1.9.0",
     "debug": "^3.1.0",
     "lvyii_cors_headers": "^0.0.5",
-    "lvyii_storage": "^0.0.5",
+    "lvyii_storage": "^0.0.6",
     "underscore": "^1.8.3"
   }
 }

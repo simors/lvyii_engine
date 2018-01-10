@@ -339,9 +339,9 @@ lvyii_cors_headers@^0.0.5:
   version "0.0.5"
   resolved "https://registry.npmjs.org/lvyii_cors_headers/-/lvyii_cors_headers-0.0.5.tgz#1ee2996d939e8cd4b2fd8b17c2ff9e7328e896ec"
 
-lvyii_storage@^0.0.5:
-  version "0.0.5"
-  resolved "https://registry.npmjs.org/lvyii_storage/-/lvyii_storage-0.0.5.tgz#7d43cc5d7008a001a56ad91fe272cdbfb62ada34"
+lvyii_storage@^0.0.6:
+  version "0.0.6"
+  resolved "https://registry.npmjs.org/lvyii_storage/-/lvyii_storage-0.0.6.tgz#f840f6e18ef56a6a2eedb5f6f510729564af696b"
   dependencies:
     debug "^3.1.0"
     es6-promise "^4.1.1"
